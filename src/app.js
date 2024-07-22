@@ -1,12 +1,15 @@
-import "./styles.css";
-import Circle from "./Circle";
+import { useState, useEffect } from 'react';
+import Circle from "./circle";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <Circle />
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
+const App = () => {
+
+    return (
+        <div className="app-flex">
+            <Circle />
+        </div>
+    );
+};
+
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(<App />);
