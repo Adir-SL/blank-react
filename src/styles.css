@@ -1,0 +1,26 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .comp-circle {
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+    animation: circleAnim 2000ms ease-in-out infinite;
+  }
+  @keyframes circleAnim {
+    0% {
+      left: 32px;
+    }
+    50% {
+      left: calc(100% - 112px);
+    }
+    100% {
+      left: 32px;
+    }
+  }
+  
